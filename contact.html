@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — ESSCA Finance Society</title>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">EFS</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="blog.html">Publications</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Us</a></li>
+    </ul>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">About</a><a href="team.html">Team</a>
+    <a href="blog.html">Publications</a><a href="resources.html">Resources</a>
+    <a href="partners.html">Partners</a><a href="contact.html">Join Us</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">// Contact & Adhésion</span>
+      <h1>Rejoins<br/><em>l'aventure.</em></h1>
+      <p>Tu es étudiant(e) à l'ESSCA et passionné(e) par la finance ? Rejoins une communauté qui t'aidera à construire ta carrière dès aujourd'hui.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Pourquoi rejoindre EFS ?</h3>
+          <p>Que tu vises l'investment banking, le private equity ou l'asset management, EFS t'offre les ressources, le réseau et l'expérience pratique pour te démarquer dans des processus de recrutement ultra-compétitifs.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value">contact@esscafinancesociety.fr</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-label">LinkedIn</span>
+              <span class="detail-value">ESSCA Finance Society</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-label">Instagram</span>
+              <span class="detail-value">@esscafinancesociety</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-label">Campus</span>
+              <span class="detail-value">Angers · Paris</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-label">Période de recrutement</span>
+              <span class="detail-value">Septembre — Octobre chaque année</span>
+            </div>
+          </div>
+
+          <!-- Benefits -->
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <span class="benefit-check">✓</span>
+              <span>Accès à la Resource Library complète (modèles, guides, enregistrements)</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-check">✓</span>
+              <span>Networking avec des professionnels en activité dans les meilleures institutions</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-check">✓</span>
+              <span>Mentorat par des alumni placés en IBD, PE et AM</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-check">✓</span>
+              <span>Participation aux workshops techniques et simulations de trading</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-check">✓</span>
+              <span>Voyage annuel à Paris / Londres avec visites d'institutions financières</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label>Prénom & Nom</label>
+              <input type="text" placeholder="Jean Dupont" required />
+            </div>
+            <div class="form-group">
+              <label>Email ESSCA</label>
+              <input type="email" placeholder="prenom.nom@essca.eu" required />
+            </div>
+            <div class="form-group">
+              <label>Campus</label>
+              <select required>
+                <option value="" disabled selected>Sélectionner</option>
+                <option>ESSCA Angers</option>
+                <option>ESSCA Paris</option>
+                <option>ESSCA Lyon</option>
+                <option>ESSCA Bordeaux</option>
+                <option>ESSCA Strasbourg</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Année d'études</label>
+              <select required>
+                <option value="" disabled selected>Sélectionner</option>
+                <option>1ère année</option>
+                <option>2ème année</option>
+                <option>3ème année</option>
+                <option>4ème année</option>
+                <option>5ème année</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Sujet du message</label>
+              <select>
+                <option>Adhésion / Rejoindre EFS</option>
+                <option>Partenariat</option>
+                <option>Presse / Communication</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Pourquoi veux-tu rejoindre EFS ?</label>
+              <textarea placeholder="Parle-nous de ta motivation, tes centres d'intérêt en finance, tes objectifs..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self:flex-start;">Envoyer ma candidature →</button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <span class="section-tag">// Message envoyé</span>
+            <h3>Merci pour ta candidature !</h3>
+            <p>Notre équipe reviendra vers toi dans les 48h. En attendant, suis-nous sur LinkedIn et Instagram pour rester au courant de nos actualités.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">EFS</span>
+        <p>ESSCA Finance Society<br/>Angers · Paris</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a><a href="team.html">Team</a>
+        <a href="blog.html">Publications</a><a href="resources.html">Resources</a>
+        <a href="partners.html">Partners</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 ESSCA Finance Society. Tous droits réservés.</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.querySelector('.contact-form').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+  <style>
+    .benefits-list {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .benefit-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .benefit-check {
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .form-success {
+      padding: 48px;
+      border: 1px solid var(--gold);
+      background: var(--gold-dim);
+    }
+    .form-success h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin: 12px 0 16px;
+    }
+    .form-success p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+  </style>
+</body>
+</html>
